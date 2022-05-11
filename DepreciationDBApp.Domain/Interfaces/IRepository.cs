@@ -12,6 +12,6 @@ namespace DepreciationDBApp.Domain.Interfaces
         int Update(T t);
         bool Delete(T t);
         List<T> GetAll();
-
+        int xd(T t);
     }
 }
