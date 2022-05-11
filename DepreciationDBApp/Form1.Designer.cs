@@ -29,6 +29,7 @@ namespace DepreciationDBApp.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAddAsset = new System.Windows.Forms.Button();
             this.dgvAsset = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
@@ -36,7 +37,8 @@ namespace DepreciationDBApp.Forms
             // 
             // btnAddAsset
             // 
-            this.btnAddAsset.Location = new System.Drawing.Point(46, 26);
+            this.btnAddAsset.ForeColor = System.Drawing.Color.Transparent;
+            this.btnAddAsset.Location = new System.Drawing.Point(12, 184);
             this.btnAddAsset.Name = "btnAddAsset";
             this.btnAddAsset.Size = new System.Drawing.Size(75, 23);
             this.btnAddAsset.TabIndex = 0;
@@ -47,17 +49,19 @@ namespace DepreciationDBApp.Forms
             // dgvAsset
             // 
             this.dgvAsset.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAsset.Location = new System.Drawing.Point(12, 75);
+            this.dgvAsset.Location = new System.Drawing.Point(3, 273);
             this.dgvAsset.Name = "dgvAsset";
             this.dgvAsset.RowTemplate.Height = 25;
-            this.dgvAsset.Size = new System.Drawing.Size(535, 150);
+            this.dgvAsset.Size = new System.Drawing.Size(692, 150);
             this.dgvAsset.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 237);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(707, 435);
             this.Controls.Add(this.dgvAsset);
             this.Controls.Add(this.btnAddAsset);
             this.Name = "Form1";
