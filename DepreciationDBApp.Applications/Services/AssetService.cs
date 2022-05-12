@@ -11,6 +11,7 @@ namespace DepreciationDBApp.Applications.Services
 {
     public class AssetService : IAssetService
     {
+        int dark;
         private IAssetRepository assetRepository;
 
         public AssetService(IAssetRepository assetRepository)
