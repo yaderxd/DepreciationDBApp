@@ -32,6 +32,7 @@ namespace DepreciationDBApp.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnAddAsset = new System.Windows.Forms.Button();
             this.dgvAsset = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,13 @@ namespace DepreciationDBApp.Forms
             this.dgvAsset.Size = new System.Drawing.Size(692, 150);
             this.dgvAsset.TabIndex = 1;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(370, 106);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -62,6 +70,7 @@ namespace DepreciationDBApp.Forms
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(707, 435);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvAsset);
             this.Controls.Add(this.btnAddAsset);
             this.Name = "Form1";
@@ -69,6 +78,7 @@ namespace DepreciationDBApp.Forms
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAsset)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -76,6 +86,7 @@ namespace DepreciationDBApp.Forms
 
         private System.Windows.Forms.Button btnAddAsset;
         private System.Windows.Forms.DataGridView dgvAsset;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
