@@ -106,7 +106,7 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 asset.Name = t.Name;
                 asset.Description = t.Description;
                 asset.Amount = t.Amount;
-                asset.AmountResidual = t.AmountResidual;
+                //asset.AmountResidual = t.AmountResidual;
                 asset.Terms = t.Terms;
                 asset.Status = t.Status;
                 asset.IsActive = t.IsActive;
