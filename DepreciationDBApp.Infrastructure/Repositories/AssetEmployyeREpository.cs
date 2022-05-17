@@ -45,5 +45,16 @@ namespace DepreciationDBApp.Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
+        public void validateAssetEmployye(Employee employee,Asset asset)
+        {
+            if (employee is null)
+            {
+                throw new ArgumentNullException(nameof(employee));
+            }
+            if (asset is null)
+            {
+                throw new ArgumentNullException(nameof(asset));
+            }
+        }
     }
 }
