@@ -19,8 +19,8 @@ namespace DepreciationDBApp.Domain.Entities
         }
 
         public virtual DbSet<Asset> Assets { get; set; }
-        public DbSet<Employee> Employees { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public DbSet<AssetEmployee> AssetEmployes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public DbSet<Employee> Employees { get ; set ; }
+        public DbSet<AssetEmployee> AssetEmployes { get ; set ; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

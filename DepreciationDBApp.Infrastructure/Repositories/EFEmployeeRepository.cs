@@ -23,7 +23,6 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 throw;
             }
         }
-
         public bool Delete(Employee t)
         {
             try
@@ -46,7 +45,6 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 throw;
             }
         }
-
         public Employee FIndByDni(string dni)
         {
             try
@@ -57,17 +55,15 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 }
                 return depreciationDbContext.Employees.FirstOrDefault(x => x.Dni.Equals(dni));
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
         }
-
         public Employee FindByEmail(string email)
         {
             throw new NotImplementedException();
         }
-
         public IEnumerable<Employee> FindByLastNames(string lastnames)
         {
             try
@@ -78,24 +74,22 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 }
                 return depreciationDbContext.Employees.Where(x => x.Lastnames.Equals(lastnames, StringComparison.CurrentCultureIgnoreCase)).ToList();
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
         }
-
         public List<Employee> GetAll()
         {
             try
             {
                 return depreciationDbContext.Employees.ToList();
             }
-            catch(Exception)
+            catch (Exception)
             {
                 throw;
             }
         }
-
         public int Update(Employee t)
         {
             try
@@ -126,14 +120,13 @@ namespace DepreciationDBApp.Infrastructure.Repositories
                 throw;
             }
         }
-
         public int xd(Employee t)
         {
             throw new NotImplementedException();
         }
         public void validateEmployee(Employee employee)
         {
-            if (employee==null)
+            if (employee == null)
             {
                 throw new ArgumentNullException($"");
             }
