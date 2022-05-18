@@ -13,7 +13,15 @@ namespace DepreciationDBApp.Infrastructure.Repositories
         public IDepreciationDbContext depreciationDbContext;
         public void Create(Employee t)
         {
-            throw new NotImplementedException();
+            try
+            {
+                depreciationDbContext.Employees.Add(t);
+                depreciationDbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public bool Delete(Employee t)

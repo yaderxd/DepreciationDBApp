@@ -29,7 +29,7 @@ namespace DepreciationDBApp.Forms
                 Name = "Monitor",
                 Description = "Dell 24 pulgadas 4k",
                 Amount = 22433.33M,
-                AmountResidual = 0,
+                //AmountResidual = 0,
                 Terms = 2,
                 Code = Guid.NewGuid().ToString(),
                 Status = "Disponible",
