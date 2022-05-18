@@ -131,9 +131,20 @@ namespace DepreciationDBApp.Infrastructure.Repositories
         {
             throw new NotImplementedException();
         }
-        public void validateEmployee()
+        public void validateEmployee(Employee employee)
         {
-
+            if (employee==null)
+            {
+                throw new ArgumentNullException($"");
+            }
+            if (string.IsNullOrWhiteSpace(employee.Email))
+            {
+                throw new Exception($"");
+            }
+            if (string.IsNullOrWhiteSpace(employee.Names))
+            {
+                throw new Exception($"");
+            }
         }
     }
 }

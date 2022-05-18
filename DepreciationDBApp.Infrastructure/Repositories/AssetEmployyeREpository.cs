@@ -13,8 +13,9 @@ namespace DepreciationDBApp.Infrastructure.Repositories
         public IDepreciationDbContext depreciationDbContext;
         public void Create(AssetEmployee t)
         {
-            depreciationDbContext.Assets.Add(t);
-            depreciationDbContext.SaveChanges();
+            throw new NotImplementedException();
+            //depreciationDbContext.Assets.Add(t);
+            //depreciationDbContext.SaveChanges();
         }
 
         public bool Delete(AssetEmployee t)
